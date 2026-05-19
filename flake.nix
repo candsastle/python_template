@@ -18,6 +18,7 @@
             if [ ! -f .init ]; then
               uv sync && echo "This file indicates that you have already run uv sync in this directory" > .init
             fi
+            source .venv/bin/activate
           '';
       };
     };
